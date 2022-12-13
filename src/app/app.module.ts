@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SecurityLoginComponent } from './security-login/security-login.component';
 import { AddEmployComponent } from './add-employ/add-employ.component';
 import { AddSecurityComponent } from './add-security/add-security.component';
+import { EmployLoginComponent } from './employ-login/employ-login.component';
 
 const myRoute:Routes=[
   {
@@ -27,7 +28,8 @@ const myRoute:Routes=[
     AdminComponent,
     SecurityLoginComponent,
     AddEmployComponent,
-    AddSecurityComponent
+    AddSecurityComponent,
+    EmployLoginComponent
   ],
   imports: [
     BrowserModule,
