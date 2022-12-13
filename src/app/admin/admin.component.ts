@@ -17,7 +17,7 @@ export class AdminComponent {
     console.log(data)
   
     if (this.username=="admin"&&this.password=="12345") {
-     this.route.navigate(['/security'])
+     this.route.navigate(['/securitylogin'])
       
     } else {
       alert("failed")
