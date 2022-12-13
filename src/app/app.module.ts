@@ -10,11 +10,17 @@ import { SecurityLoginComponent } from './security-login/security-login.componen
 import { AddEmployComponent } from './add-employ/add-employ.component';
 import { AddSecurityComponent } from './add-security/add-security.component';
 import { EmployLoginComponent } from './employ-login/employ-login.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 const myRoute:Routes=[
   {
     path:"",
     component:AdminComponent
+  },
+  {
+    path:"addsecurity",
+    component:AddSecurityComponent
   },
   {
     path:"securitylogin",
@@ -35,7 +41,8 @@ const myRoute:Routes=[
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule
+    RouterModule.forRoot(myRoute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
