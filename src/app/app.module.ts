@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { SecurityLoginComponent } from './security-login/security-login.component';
 import { AddEmployComponent } from './add-employ/add-employ.component';
+import { AddSecurityComponent } from './add-security/add-security.component';
 
 const myRoute:Routes=[
   {
@@ -25,7 +26,8 @@ const myRoute:Routes=[
     AppComponent,
     AdminComponent,
     SecurityLoginComponent,
-    AddEmployComponent
+    AddEmployComponent,
+    AddSecurityComponent
   ],
   imports: [
     BrowserModule,
