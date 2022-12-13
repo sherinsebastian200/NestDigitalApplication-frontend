@@ -6,18 +6,24 @@ import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
+import { SecurityLoginComponent } from './security-login/security-login.component';
 
 const myRoute:Routes=[
   {
     path:"",
     component:AdminComponent
+  },
+  {
+    path:"securitylogin",
+    component:SecurityLoginComponent
   }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent
+    AdminComponent,
+    SecurityLoginComponent
   ],
   imports: [
     BrowserModule,
