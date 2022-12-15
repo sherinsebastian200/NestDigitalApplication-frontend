@@ -21,7 +21,7 @@ export class AddSecurityComponent {
     this.api.addSecurity(data).subscribe(
       (response:any)=>{
         if (response.status=="success") {
-          alert("security added successfully")
+          alert("security details added successfully")
           
         } else {
           alert("Something went wrong")

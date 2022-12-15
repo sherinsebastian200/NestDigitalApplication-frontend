@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-add-employ',
@@ -14,17 +15,28 @@ export class AddEmployComponent {
   salary=""
   username=""
   password=""
-
+  constructor(private api:ApiService){}
 
   readvalues=()=>{
     let data:any={
-      "empcode":this.empcode,"empname":this.empname,"designaiton":this.designation,"salary":this.salary,"username":this.username, "password":this.password
+      "empcode":this.empcode,"empname":this.empname," designation":this.designation,"salary":this.salary,"username":this.username, "password":this.password
     }
     console.log(data)
-
-
-
-
- 
+    this.api.addSecurity(data).subscribe(
+      (response:any)=>{
+        if (response.status=="success") {
+          alert("security details added successfully")
+          
+        } else {
+          alert("Something went wrong")
+        }
+      }
+    )
+    }
+  
   }
-  }
+
+
+
+
+
