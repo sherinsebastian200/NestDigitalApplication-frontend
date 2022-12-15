@@ -17,6 +17,7 @@ import { ViewEmployComponent } from './view-employ/view-employ.component';
 import { ViewEmployeeprofileComponent } from './view-employeeprofile/view-employeeprofile.component';
 import { NavbarEmployeeComponent } from './navbar-employee/navbar-employee.component';
 import { NavbarHomeComponent } from './navbar-home/navbar-home.component';
+import { ViewSecurityComponent } from './view-security/view-security.component';
 
 
 const myRoute:Routes=[
@@ -51,6 +52,10 @@ const myRoute:Routes=[
   {
     path:"employprofile",
     component:ViewEmployeeprofileComponent
+  },
+  {
+    path:"viewsecurity",
+    component:ViewSecurityComponent
   }
 ]
 
@@ -67,7 +72,8 @@ const myRoute:Routes=[
     ViewEmployComponent,
     ViewEmployeeprofileComponent,
     NavbarEmployeeComponent,
-    NavbarHomeComponent
+    NavbarHomeComponent,
+    ViewSecurityComponent
   ],
   imports: [
     BrowserModule,

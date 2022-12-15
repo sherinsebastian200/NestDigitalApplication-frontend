@@ -40,6 +40,10 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/employprofile",data)
   }
+  vieWSecurity=()=>
+  {
+    return this.http.get("http://localhost:8080/viewsecurity")
+  }
 
  
   }
