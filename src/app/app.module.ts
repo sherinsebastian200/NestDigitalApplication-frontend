@@ -12,6 +12,7 @@ import { AddSecurityComponent } from './add-security/add-security.component';
 import { EmployLoginComponent } from './employ-login/employ-login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { SearchEmployComponent } from './search-employ/search-employ.component';
 
 
 const myRoute:Routes=[
@@ -34,6 +35,10 @@ const myRoute:Routes=[
   {
     path:"addemploy",
     component:AddEmployComponent
+  },
+  {
+    path:"searchemploy",
+    component:SearchEmployComponent
   }
 ]
 
@@ -45,7 +50,8 @@ const myRoute:Routes=[
     AddEmployComponent,
     AddSecurityComponent,
     EmployLoginComponent,
-    NavBarComponent
+    NavBarComponent,
+    SearchEmployComponent
   ],
   imports: [
     BrowserModule,
