@@ -26,10 +26,10 @@ constructor(private api:ApiService,private router:Router){}
         console.log(response)
         if (response.status=="success") {
           this.searchUser=response; 
-          let empId=response.empId
-          console.log(empId)
-          localStorage.setItem("userInfo",empId)
-          this.router.navigate(['/searchemp'])
+          let empid=response.empId
+          console.log(empid)
+          localStorage.setItem("userInfo",empid)
+          this.router.navigate(['/employprofile'])
         }
         else{
           alert(response.message)
