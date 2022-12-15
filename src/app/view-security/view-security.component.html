@@ -1,0 +1,32 @@
+<app-nav-bar></app-nav-bar>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="container">
+            <div class="row g-3 m-4">
+             
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 col-xxl-3" *ngFor="let i of data">
+                    
+                    <div  class="card"style="height: 20rem;" >
+                        <img height="180px" src="https://i.pinimg.com/736x/33/00/10/330010e0261fb43fae69e7ac8dc3df7f.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <h5 class="card-title">Empcode :{{i.empcode}} </h5>
+                        <p class="card-text">Name :{{i.secname}}</p>
+                        <p class="card-text">Username : {{i.username}}</p>
+                       
+                        
+                        </div>
+                    </div>
+
+                </div>
+                
+           
+
+                
+            </div>
+            </div>
+
+        </div>
+    </div>
+</div>
