@@ -32,5 +32,10 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/deleteemploy",data)
   }
+  vieWEmploy=()=>
+  {
+    return this.http.get("http://localhost:8080/viewemp")
+  }
+
  
   }
