@@ -28,6 +28,7 @@ import { VisitorLogComponent } from './visitor-log/visitor-log.component';
 import { DailyVisitorlogComponent } from './daily-visitorlog/daily-visitorlog.component';
 import { ViewVisitorlogComponent } from './view-visitorlog/view-visitorlog.component';
 import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
+import { ViewLeaveallComponent } from './view-leaveall/view-leaveall.component';
 
 
 const myRoute:Routes=[
@@ -98,6 +99,10 @@ const myRoute:Routes=[
   {
     path:"leaveapply",
     component:ApplyLeaveComponent
+  },
+  {
+    path:"viewallleave",
+    component:ViewLeaveallComponent
   }
 ]
 
@@ -125,7 +130,8 @@ const myRoute:Routes=[
     VisitorLogComponent,
     DailyVisitorlogComponent,
     ViewVisitorlogComponent,
-    ApplyLeaveComponent
+    ApplyLeaveComponent,
+    ViewLeaveallComponent
   ],
   imports: [
     BrowserModule,

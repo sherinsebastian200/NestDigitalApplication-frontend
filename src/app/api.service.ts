@@ -76,6 +76,10 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/leaveapply",data)
   }
+  vieWAllLeave=()=>
+  {
+    return this.http.get("http://localhost:8080/viewallleave")
+  }
 
  
   }
