@@ -26,6 +26,7 @@ import { NavbarLogComponent } from './navbar-log/navbar-log.component';
 import { ViewEmployeelogComponent } from './view-employeelog/view-employeelog.component';
 import { VisitorLogComponent } from './visitor-log/visitor-log.component';
 import { DailyVisitorlogComponent } from './daily-visitorlog/daily-visitorlog.component';
+import { ViewVisitorlogComponent } from './view-visitorlog/view-visitorlog.component';
 
 
 const myRoute:Routes=[
@@ -88,6 +89,10 @@ const myRoute:Routes=[
   {
     path:"viewDailyVisitorlog",
     component:DailyVisitorlogComponent
+  },
+  {
+    path:"viewallvisitorlog",
+    component:ViewVisitorlogComponent
   }
 ]
 
@@ -113,7 +118,8 @@ const myRoute:Routes=[
     NavbarLogComponent,
     ViewEmployeelogComponent,
     VisitorLogComponent,
-    DailyVisitorlogComponent
+    DailyVisitorlogComponent,
+    ViewVisitorlogComponent
   ],
   imports: [
     BrowserModule,
