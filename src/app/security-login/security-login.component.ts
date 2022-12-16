@@ -10,6 +10,7 @@ import { ApiService } from '../api.service';
 export class SecurityLoginComponent {
   username=""
   password=""
+  searchUser:any=[]
   constructor(private api:ApiService,private route:Router){}
   readValues=()=>{
     let data:any={
@@ -17,17 +18,26 @@ export class SecurityLoginComponent {
     }
     console.log(data)
 
-    console.log(data)
+   
     this.api.securityLogin(data).subscribe(
-      (response:any)=>{
+      (response:any)=>
+      {
+        this.username=""
+        this.password=""
+        console.log(response)
         if (response.status=="success") {
-          this.route.navigate(['/visitorlog'])
-       
-        } else {
-          
+          this.searchUser=response; 
+          let securityId=response.securityId
+          console.log(securityId)
+          localStorage.setItem("userInfos",securityId)
+          this.route.navigate(['/securityprofile'])
         }
+        else{
+          alert(response.message)
+        }
+       
+       
       }
     )
   }
-
 }
