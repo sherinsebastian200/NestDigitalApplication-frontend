@@ -1,0 +1,63 @@
+<app-navbar-employee></app-navbar-employee>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3 m-4">
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">Employee Code</label>
+                    <input name="empid" [(ngModel)]="empid" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">leavetype</label>
+                    <select name="leavetype" [(ngModel)]="leavetype" id="" class="form-control">
+                        <option value="">Select</option>
+                        <option value="casual">Casual Leave</option>
+                        <option value="sick">Sick Leave</option>
+                        <option value="special">Special Leave</option>
+                    </select>
+                   
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">remarks</label>
+                    <input name="remarks" [(ngModel)]="remarks" type="text" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">From Date</label>
+                    <input type="date" name="fromdate" [(ngModel)]="fromdate" id="" class="form-control">
+                    
+                </div>
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label">To Date</label>
+                    <input type="date" name="todate" [(ngModel)]="todate" id="" class="form-control">
+                    
+
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+                    <label for="" class="form-label">Leave Apply  Date</label>
+                    <input type="date" name="leaveapplydate" [(ngModel)]="leaveapplydate" id="" class="form-control">
+                    
+
+                </div>
+
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+
+                    <button (click)="readValue()" class="btn btn-success">Apply</button>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
