@@ -80,6 +80,20 @@ export class ApiService {
   {
     return this.http.get("http://localhost:8080/viewallleave")
   }
+  updateStatus=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/update",data)
+  }
+  acceptLeave=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/accept",data)
+  }
+  searchStatus=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/searchstatus",data)
+  }
+
+}
 
  
-  }
+  
