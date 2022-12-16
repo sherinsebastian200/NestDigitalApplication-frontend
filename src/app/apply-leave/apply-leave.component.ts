@@ -24,9 +24,9 @@ export class ApplyLeaveComponent {
       {
         console.log(response)
         if (response.status=="success") {
-          alert("leave added successfully")
+          alert("leave applied successfully")
         } else {
-          alert("something wrong")
+          alert("something went wrong")
         }
       }
     )

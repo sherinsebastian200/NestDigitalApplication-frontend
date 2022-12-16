@@ -29,6 +29,7 @@ import { DailyVisitorlogComponent } from './daily-visitorlog/daily-visitorlog.co
 import { ViewVisitorlogComponent } from './view-visitorlog/view-visitorlog.component';
 import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 import { ViewLeaveallComponent } from './view-leaveall/view-leaveall.component';
+import { LeaveStatusComponent } from './leave-status/leave-status.component';
 
 
 const myRoute:Routes=[
@@ -103,7 +104,12 @@ const myRoute:Routes=[
   {
     path:"viewallleave",
     component:ViewLeaveallComponent
+  },
+  {
+    path:"leavestatus",
+    component:LeaveStatusComponent
   }
+  
 ]
 
 @NgModule({
@@ -131,7 +137,8 @@ const myRoute:Routes=[
     DailyVisitorlogComponent,
     ViewVisitorlogComponent,
     ApplyLeaveComponent,
-    ViewLeaveallComponent
+    ViewLeaveallComponent,
+    LeaveStatusComponent
   ],
   imports: [
     BrowserModule,
