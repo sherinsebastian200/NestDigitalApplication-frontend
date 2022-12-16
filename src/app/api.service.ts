@@ -72,6 +72,10 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/viewDailyVisitorlog",data)
   }
+  addLeave=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/leaveapply",data)
+  }
 
  
   }

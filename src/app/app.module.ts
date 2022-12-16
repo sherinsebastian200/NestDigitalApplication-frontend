@@ -27,6 +27,7 @@ import { ViewEmployeelogComponent } from './view-employeelog/view-employeelog.co
 import { VisitorLogComponent } from './visitor-log/visitor-log.component';
 import { DailyVisitorlogComponent } from './daily-visitorlog/daily-visitorlog.component';
 import { ViewVisitorlogComponent } from './view-visitorlog/view-visitorlog.component';
+import { ApplyLeaveComponent } from './apply-leave/apply-leave.component';
 
 
 const myRoute:Routes=[
@@ -93,6 +94,10 @@ const myRoute:Routes=[
   {
     path:"viewallvisitorlog",
     component:ViewVisitorlogComponent
+  },
+  {
+    path:"leaveapply",
+    component:ApplyLeaveComponent
   }
 ]
 
@@ -119,7 +124,8 @@ const myRoute:Routes=[
     ViewEmployeelogComponent,
     VisitorLogComponent,
     DailyVisitorlogComponent,
-    ViewVisitorlogComponent
+    ViewVisitorlogComponent,
+    ApplyLeaveComponent
   ],
   imports: [
     BrowserModule,
