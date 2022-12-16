@@ -1,0 +1,31 @@
+<app-navbar-log></app-navbar-log>
+<div class="container">
+    <div class="row g-3 m-4">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+          <table class="table table-bordered border-dark">
+            <thead>
+              <tr>
+                <th scope="col">Employee Code</th>
+                <th scope="col">Date</th>
+                <th scope="col">Entry Date and Time</th>
+                <th scope="col">Exit Date and Time</th>
+               
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let i of data">
+                <td>{{i.empid}}</td>
+                <td>{{i.date}}</td>
+                <td>{{i.entrydatetime}}</td>
+                <td>{{i.exitdatetime}}</td>
+               
+              </tr>
+            </tbody>
+          </table>
+            
+
+        </div>
+    </div>
+</div>
+
