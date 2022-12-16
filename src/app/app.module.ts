@@ -20,6 +20,7 @@ import { NavbarHomeComponent } from './navbar-home/navbar-home.component';
 import { ViewSecurityComponent } from './view-security/view-security.component';
 import { ViewSecurityprofileComponent } from './view-securityprofile/view-securityprofile.component';
 import { NavbarSecurityComponent } from './navbar-security/navbar-security.component';
+import { EmployeeLogComponent } from './employee-log/employee-log.component';
 
 
 const myRoute:Routes=[
@@ -62,6 +63,10 @@ const myRoute:Routes=[
   {
     path:"securityprofile",
     component:ViewSecurityprofileComponent
+  },
+  {
+    path:"employlog",
+    component:EmployeeLogComponent
   }
 ]
 
@@ -81,7 +86,8 @@ const myRoute:Routes=[
     NavbarHomeComponent,
     ViewSecurityComponent,
     ViewSecurityprofileComponent,
-    NavbarSecurityComponent
+    NavbarSecurityComponent,
+    EmployeeLogComponent
   ],
   imports: [
     BrowserModule,

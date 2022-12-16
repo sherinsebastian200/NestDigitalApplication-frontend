@@ -1,0 +1,57 @@
+<app-navbar-security></app-navbar-security>
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                   
+                    <h2 class="text" style="text-align:center">Employee Log </h2>
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label text">Employee code</label>
+                    <input name="empid" [(ngModel)]="empid" type="text" class="form-control">
+
+                </div>
+               
+                  
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">Date</label>
+                    <input type="date" name="date" [(ngModel)]="date" id="" class="form-control">
+                   
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">Entry Datetime</label>
+                    <input type="datetime-local" name="entrydatetime" [(ngModel)]="entrydatetime" id="" class="form-control">
+
+                </div>
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+
+                    <label for="" class="form-label">Exit Datetime</label>
+                    <input type="datetime-local" name="exitdatetime" [(ngModel)]="exitdatetime" id="" class="form-control">
+
+
+                </div>
+                
+
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
+
+                    <button (click)="readValue()" class="btn btn-success">Login</button>
+
+                </div>
+                
+                
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
