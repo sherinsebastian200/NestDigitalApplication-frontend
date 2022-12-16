@@ -52,6 +52,10 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/employlog",data)
   }
+  vieWDailyEmployLog=(data:any)=>
+  {
+    return this.http.post("http://localhost:8080/viewdailyemplog",data)
+  }
 
  
   }

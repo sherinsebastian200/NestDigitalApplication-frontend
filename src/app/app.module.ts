@@ -21,6 +21,8 @@ import { ViewSecurityComponent } from './view-security/view-security.component';
 import { ViewSecurityprofileComponent } from './view-securityprofile/view-securityprofile.component';
 import { NavbarSecurityComponent } from './navbar-security/navbar-security.component';
 import { EmployeeLogComponent } from './employee-log/employee-log.component';
+import { DailyEmployeelogComponent } from './daily-employeelog/daily-employeelog.component';
+import { NavbarLogComponent } from './navbar-log/navbar-log.component';
 
 
 const myRoute:Routes=[
@@ -67,6 +69,10 @@ const myRoute:Routes=[
   {
     path:"employlog",
     component:EmployeeLogComponent
+  },
+  {
+    path:"viewdailyemplog",
+    component:DailyEmployeelogComponent
   }
 ]
 
@@ -87,7 +93,9 @@ const myRoute:Routes=[
     ViewSecurityComponent,
     ViewSecurityprofileComponent,
     NavbarSecurityComponent,
-    EmployeeLogComponent
+    EmployeeLogComponent,
+    DailyEmployeelogComponent,
+    NavbarLogComponent
   ],
   imports: [
     BrowserModule,
